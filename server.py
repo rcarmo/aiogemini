@@ -118,5 +118,5 @@ async def main(host, port) -> None:
     await server.serve_forever()
 
 if __name__=="__main__":
-    run(main('127.0.0.1', 1965))
+    run(main(environ.get("BIND_ADDRESS", '127.0.0.1'), 1965))
     
