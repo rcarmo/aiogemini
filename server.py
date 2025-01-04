@@ -6,7 +6,7 @@ from urllib.parse import urlparse
 from logging import getLogger, DEBUG, INFO, WARN, ERROR
 from logging.config import dictConfig
 from os.path import exists, join, abspath, normpath
-from os import getcwd
+from os import getcwd, environ
 from mimetypes import guess_type, add_type
 
 TIMEOUT = 1
